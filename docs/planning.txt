@@ -1,0 +1,70 @@
+Week 1
+
+Bootloader baseline and source integration
+- Build SPL/MLO and U-Boot from source.
+- Document ROM → SPL → U-Boot → kernel execution.
+- Configure boot targets, environment variables, serial logging and recovery access.
+- Track configuration changes using Git.
+  
+  Deliverable: reproducible clean build and boot log.
+
+
+
+Week 2
+
+Boot flow and diagnostics
+- Implement a controlled boot sequence.
+- Record selected boot source, image version and failure reason.
+- Add boot timing measurements and useful error messages.
+- Test missing kernel, invalid DTB and unavailable rootfs.
+  
+  Deliverable: boot diagnostics and failure test report.
+
+
+
+Weeks 3–4
+
+Signed FIT image verification
+- Package kernel, DTB and optionally initramfs into a FIT image.
+- Generate development signing keys on the host.
+- Embed the corresponding public key into U-Boot's control DTB.
+- Enforce signature verification and reject unsigned or tampered images.
+  
+  Deliverable: verified boot with positive and negative test cases.
+
+
+
+Weeks 5–6
+
+A/B update state machine
+- Select the active slot using persistent metadata.
+- Write updates to the inactive slot.
+- Validate image integrity before activation.
+- Track pending, successful and failed boot attempts.
+- Roll back to the last known-good slot if the new image fails.
+  
+  Deliverable: repeatable A/B update and rollback demonstration.
+
+
+
+Week 7
+
+Watchdog and recovery
+- Integrate boot-attempt limits.
+- Test forced reboot, kernel panic and incomplete update scenarios.
+- Provide a recovery path that does not depend on the failing slot.
+  
+  Deliverable: documented fault-injection results.
+
+
+
+Week 8
+
+Production-style validation
+- Automate build and test procedures.
+- Test power loss at different update stages.
+- Check invalid signatures, corrupted metadata and exhausted retries.
+- Measure boot time, image size and memory usage.
+- Write design, test and release documentation.
+  
+  Deliverable: release candidate and engineering test report.

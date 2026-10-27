@@ -1,0 +1,8 @@
+# Generated build output
+/build/
+
+# Temporary editor files
+*~
+*.swp
+*.swo
+.DS_Store
