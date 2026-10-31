@@ -1,0 +1,18 @@
+=== U-Boot reproducible build ===
+2026-10-30T22:09:45+05:30
+Source: /home/shadab/Workspace/EmbeddLinux/Project/embedded-linux-bootloader/src/u-boot
+Tag: v2026.07
+Commit: ece349ade2973e220f524ce59e59711cc919263f
+Compiler: arm-linux-gnueabihf-gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+Architecture: arm
+Defconfig: am335x_evm_defconfig
+Build directory: /home/shadab/Workspace/EmbeddLinux/Project/embedded-linux-bootloader/build/u-boot-work
+
+make: Entering directory '/home/shadab/Workspace/EmbeddLinux/Project/embedded-linux-bootloader/src/u-boot'
+***
+*** The source tree is not clean, please run 'make ARCH=arm mrproper'
+*** in /home/shadab/Workspace/EmbeddLinux/Project/embedded-linux-bootloader/src/u-boot
+***
+make[1]: *** [/home/shadab/Workspace/EmbeddLinux/Project/embedded-linux-bootloader/src/u-boot/Makefile:634: outputmakefile] Error 1
+make: *** [Makefile:189: __sub-make] Error 2
+make: Leaving directory '/home/shadab/Workspace/EmbeddLinux/Project/embedded-linux-bootloader/src/u-boot'

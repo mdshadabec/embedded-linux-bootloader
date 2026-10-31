@@ -1,0 +1,11 @@
+shadab@shadab-Ubuntu:~/Workspace/EmbeddLinux/Project/embedded-linux-bootloader/src/linux$ git status --short --branch
+## linux-6.12.y...origin/linux-6.12.y
+shadab@shadab-Ubuntu:~/Workspace/EmbeddLinux/Project/embedded-linux-bootloader/src/linux$ git log -1 --oneline
+03bae623ec32 (HEAD -> linux-6.12.y, tag: v6.12.115, origin/linux-6.12.y) Linux 6.12.115
+shadab@shadab-Ubuntu:~/Workspace/EmbeddLinux/Project/embedded-linux-bootloader/src/linux$ make kernelversion
+6.12.115
+shadab@shadab-Ubuntu:~/Workspace/EmbeddLinux/Project/embedded-linux-bootloader/src/linux$ git describe --always --dirty
+v6.12.115
+shadab@shadab-Ubuntu:~/Workspace/EmbeddLinux/Project/embedded-linux-bootloader/src/linux$ git rev-parse HEAD
+03bae623ec326c2738198739625832aab0eb120a
+
